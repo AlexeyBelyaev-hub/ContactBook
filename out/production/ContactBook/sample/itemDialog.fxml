@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ItemDialogController">
+   <content>
+      <GridPane vgap="5.0">
+          <Label text="First Name" />
+          <TextField fx:id="firstName" GridPane.columnIndex="1" />
+
+          <Label text="Last Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+          <TextField fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+          <Label prefHeight="17.0" prefWidth="117.0" text="Phone Number" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+          <TextField fx:id="phoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+          <Label text="Notes" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+          <TextArea fx:id="notes" prefHeight="202.0" prefWidth="511.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+      </GridPane>
+   </content>
+</DialogPane>
